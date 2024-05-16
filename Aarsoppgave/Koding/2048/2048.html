@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="2048.css">
+</head>
+<body>
+    <h1>2048</h1>
+    <h3>Score: <span id="score">0</span></h3>
+    <div id="timer">Tid: <span id="time">0:00</span></div>
+
+    <div id="board">
+        <div id="congrats-box" style="display: none;">
+            <h2>Gratulerer!</h2>
+            <p>Du har oppnådd brikke 2048!</p>
+            <button id="go-back-btn" onclick="goBack()">Gå tilbake</button>
+            <button id="save-score-btn" onclick="saveScore()">Lagre score</button>
+            <button id="continue-playing-btn" onclick="continuePlaying()">Fortsett å spille videre</button>
+        </div>
+        <div id="game-over-box" style="display: none;">
+            <h2>Game Over</h2>
+            <button id="restart-btn">Start på nytt</button>
+            <button id="save-score-btn">Lagre</button>
+            <button id="go-back-btn">Gå tilbake</button>
+        </div>
+        
+        
+    </div>
+</body>
+    <script src="2048.js"></script>
+</html>
